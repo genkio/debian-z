@@ -22,7 +22,7 @@ fi
 # done
 
 cd
-cd debian-z/fonts
+cd mint-z/fonts
 tar xzvf Hack-NerdFont.tar.gz
 unzip JetBrainsMono.zip
 mv *ttf ~/.local/share/fonts

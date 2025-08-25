@@ -73,7 +73,6 @@ sudo nala install -y vim mousepad
 
 # Image Viewer
 sudo nala install -y viewnior feh sxiv ueberzug python3-pillow
-#pip install pillow (for debian 11)
 
 # Media Player
 sudo nala install -y mpv

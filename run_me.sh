@@ -9,10 +9,10 @@ ___  ____ ___  _ ____ _  _    ___
 ####################################
 \e[0m\n"
 
-bash ~/debian-z/1-software.sh
-bash ~/debian-z/2-setup.sh
-bash ~/debian-z/3-fonts.sh
-bash ~/debian-z/4-rice.sh
+bash ~/mint-z/1-software.sh
+bash ~/mint-z/2-setup.sh
+bash ~/mint-z/3-fonts.sh
+bash ~/mint-z/4-rice.sh
 
 sudo nala autoremove
 

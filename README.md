@@ -1,20 +1,17 @@
 <br />
-<div align="center">
-    <img src="https://raw.githubusercontent.com/zedsalim/debian-z/refs/heads/master/%5Bign%5D/logo.png" alt="Logo" width="70%">
-
-  <h3 align="center">Debian Minimal Setup with i3</h3>
+  <h3 align="center">Mint Minimal Setup with i3</h3>
 
   <p align="center">
-    Automate and Style Your Debian Setup with Debian-Z!
+    Automate and Style Your Mint Setup with Mint-Z!
     <br />
 </div>
 
 ## About The Project
 
 - **WM:** [i3-gaps](https://github.com/Airblader/i3)
-- **OS:** [Debian Linux](https://debian.org)
+- **OS:** [Mint Linux](https://www.linuxmint.com)
 - **Terminal:** [alacritty](https://github.com/alacritty/alacritty)
-- **Shell:** [bash](https://wiki.debian.org/Bash)
+- **Shell:** [bash](https://www.gnu.org/software/bash/)
 - **Status Bar:** [polybar](https://github.com/polybar/polybar)
 - **Compositor:** [picom](https://github.com/ibhagwan/picom)
 - **Editor:** [vim](https://github.com/vim/vim)
@@ -22,9 +19,11 @@
 - **File Manager:** [pcmanfm](https://github.com/lxde/pcmanfm)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
-This project is a shell script that automates the installation process for a minimal Debian system, along with the i3 window manager and Ly Console Display Manager. It aims to provide an easy and efficient way to set up a Debian-based desktop environment with a Stylish lightweight and customizable window manager.
+This project is a shell script that automates the installation process for a minimal Mint system, along with the i3 window manager and Ly Console Display Manager. It aims to provide an easy and efficient way to set up a Mint-based desktop environment with a Stylish lightweight and customizable window manager.
 
 The script installs the necessary packages and applications required for daily drive and a functional and beutiful i3wm setup, with Ly Console Display Manager, and other recommended utilities. It also configures various system settings to optimize the user experience and provides a clean minimal and stylish i3 configuration.
+
+**This project is based on [debian-z](https://github.com/zedsalim/debian-z) and has been adapted to work with Linux Mint.**
 
 ## Available Themes
 
@@ -39,11 +38,11 @@ The script installs the necessary packages and applications required for daily d
 
 ## Pre-Installation
 
-To use this script and set up your Debian system with my i3 config and Ly, follow these steps:
+To use this script and set up your Mint system with my i3 config and Ly, follow these steps:
 
-1. Install a fresh minimal Debian system. You can download the minimal installation ISO from the official Debian website.
+1. Install a fresh minimal Mint system. You can download the minimal installation ISO from the official Mint website.
 
-2. Follow my installation guide here [How To Install Debian-Z](https://github.com/zedsalim/debian-z-tutor) .
+2. Follow original project owner's installation guide here [How To Install](https://github.com/zedsalim/debian-z-tutor) .
 
 3. Once the base system is installed:
 
@@ -56,8 +55,8 @@ sudo apt install -y git vim
 ### Clone this repo
 
 ```bash
-git clone https://github.com/zedsalim/debian-z
-cd debian-z
+git clone https://github.com/genkio/mint-z
+cd mint-z
 ls
 .git   config  optional  1-software.sh  3-fonts.sh  README.md
 [ign]  fonts   theme     2-setup.sh     4-rice.sh   run_me.sh
@@ -66,15 +65,15 @@ ls
 ### Categorization of the directories and the scripts
 
 1. Scripts:
-   1-software.sh: A script responsible for install all the softwares and the packages needed for a minimal Debian system, **(you must see what inside it and you can custumize it as you need)**.
+   1-software.sh: A script responsible for install all the softwares and the packages needed for a minimal Mint system, **(you must see what inside it and you can custumize it as you need)**.
    2-setup.sh: A script that handles the initial setup of the i3wm environment and Ly Console Display Manager.
    3-fonts.sh: A script for font configuration and installation.
-   4-rice.sh: A script that performs further customization or "ricing" of Debian-Z i3wm environment.
+   4-rice.sh: A script that performs further customization or "ricing" of Mint-Z i3wm environment.
    run_me.sh: A script meant to be executed to apply the configurations and setups provided by other scripts **(this is the only script you need to run)**
 
 2. Directories **(Do not modify)**:
-   config: The configuration file for the Debian-Z setup.
-   fonts: A directory containing font files used in the Debian-Z configuration.
+   config: The configuration file for the Mint-Z setup.
+   fonts: A directory containing font files used in the Mint-Z configuration.
    theme: A directory with theme-related files.
    optional: A folder containing optional configuration files and scripts that are not necessary for the basic setup (check them out).
 
