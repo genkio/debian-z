@@ -46,9 +46,10 @@ To use this script and set up your Mint system with my i3 config and Ly, follow 
 
 3. Once the base system is installed:
 
-### Install git and vim
+### Update & install git and vim
 
 ```bash
+sudo apt update && sudo apt upgrade -y
 sudo apt install -y git vim
 ```
 
