@@ -62,9 +62,6 @@ sudo systemctl enable cups
 sudo nala install -y bluez blueman
 sudo systemctl enable bluetooth
 
-# Messaging
-sudo nala install -y telegram-desktop
-
 # Menu and Window Managers
 sudo nala install -y sxhkd numlockx rofi dunst libnotify-bin picom dmenu polybar dbus-x11
 

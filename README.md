@@ -1,4 +1,3 @@
-
 <br />
 <div align="center">
     <img src="https://raw.githubusercontent.com/zedsalim/debian-z/refs/heads/master/%5Bign%5D/logo.png" alt="Logo" width="70%">
@@ -23,19 +22,18 @@
 - **File Manager:** [pcmanfm](https://github.com/lxde/pcmanfm)
 - **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
 
-
 This project is a shell script that automates the installation process for a minimal Debian system, along with the i3 window manager and Ly Console Display Manager. It aims to provide an easy and efficient way to set up a Debian-based desktop environment with a Stylish lightweight and customizable window manager.
 
-The script installs the necessary packages and applications required for daily drive and a functional and beutiful i3wm setup, with Ly Console Display Manager, and other recommended utilities. It also configures various system settings to optimize the user experience and provides a clean minimal and stylish i3 configuration. 
+The script installs the necessary packages and applications required for daily drive and a functional and beutiful i3wm setup, with Ly Console Display Manager, and other recommended utilities. It also configures various system settings to optimize the user experience and provides a clean minimal and stylish i3 configuration.
 
 ## Available Themes
 
-| Moon (Default) | BlueNova | Dracula | Darkness | Nord | Horizon | Pink |
-|--------------|--------------|--------------|--------------|--------------|--------------|--------------|
-| ![Screenshot 1]([ign]/img/moon/s1.png) | ![Screenshot 1]([ign]/img/bluenova/s1.png) | ![Screenshot 2]([ign]/img/dracula/s1.png) | ![Screenshot 3]([ign]/img/darkness/s1.png) | ![Screenshot 3]([ign]/img/nord/s1.png) |  ![Screenshot 3]([ign]/img/horizon/s1.png) |  ![Screenshot 3]([ign]/img/pink/s1.png) |    
-| ![Screenshot 1]([ign]/img/moon/s2.png) | ![Screenshot 1]([ign]/img/bluenova/s2.png) | ![Screenshot 2]([ign]/img/dracula/s2.png) | ![Screenshot 3]([ign]/img/darkness/s2.png) | ![Screenshot 3]([ign]/img/nord/s2.png) |  ![Screenshot 3]([ign]/img/horizon/s2.png) |  ![Screenshot 3]([ign]/img/pink/s2.png) |
-| ![Screenshot 1]([ign]/img/moon/s3.png) | ![Screenshot 1]([ign]/img/bluenova/s3.png) | ![Screenshot 2]([ign]/img/dracula/s3.png) | ![Screenshot 3]([ign]/img/darkness/s3.png) | ![Screenshot 3]([ign]/img/nord/s3.png) |  ![Screenshot 3]([ign]/img/horizon/s3.png) |  ![Screenshot 3]([ign]/img/pink/s3.png) |
-| ![Screenshot 1]([ign]/img/moon/s4.png) | ![Screenshot 1]([ign]/img/bluenova/s4.png) | ![Screenshot 2]([ign]/img/dracula/s4.png) | ![Screenshot 3]([ign]/img/darkness/s4.png) | ![Screenshot 3]([ign]/img/nord/s4.png) |  ![Screenshot 3]([ign]/img/horizon/s4.png) |  ![Screenshot 3]([ign]/img/pink/s4.png) |
+| Moon (Default)                         | BlueNova                                   | Dracula                                   | Darkness                                   | Nord                                   | Horizon                                   | Pink                                   |
+| -------------------------------------- | ------------------------------------------ | ----------------------------------------- | ------------------------------------------ | -------------------------------------- | ----------------------------------------- | -------------------------------------- |
+| ![Screenshot 1]([ign]/img/moon/s1.png) | ![Screenshot 1]([ign]/img/bluenova/s1.png) | ![Screenshot 2]([ign]/img/dracula/s1.png) | ![Screenshot 3]([ign]/img/darkness/s1.png) | ![Screenshot 3]([ign]/img/nord/s1.png) | ![Screenshot 3]([ign]/img/horizon/s1.png) | ![Screenshot 3]([ign]/img/pink/s1.png) |
+| ![Screenshot 1]([ign]/img/moon/s2.png) | ![Screenshot 1]([ign]/img/bluenova/s2.png) | ![Screenshot 2]([ign]/img/dracula/s2.png) | ![Screenshot 3]([ign]/img/darkness/s2.png) | ![Screenshot 3]([ign]/img/nord/s2.png) | ![Screenshot 3]([ign]/img/horizon/s2.png) | ![Screenshot 3]([ign]/img/pink/s2.png) |
+| ![Screenshot 1]([ign]/img/moon/s3.png) | ![Screenshot 1]([ign]/img/bluenova/s3.png) | ![Screenshot 2]([ign]/img/dracula/s3.png) | ![Screenshot 3]([ign]/img/darkness/s3.png) | ![Screenshot 3]([ign]/img/nord/s3.png) | ![Screenshot 3]([ign]/img/horizon/s3.png) | ![Screenshot 3]([ign]/img/pink/s3.png) |
+| ![Screenshot 1]([ign]/img/moon/s4.png) | ![Screenshot 1]([ign]/img/bluenova/s4.png) | ![Screenshot 2]([ign]/img/dracula/s4.png) | ![Screenshot 3]([ign]/img/darkness/s4.png) | ![Screenshot 3]([ign]/img/nord/s4.png) | ![Screenshot 3]([ign]/img/horizon/s4.png) | ![Screenshot 3]([ign]/img/pink/s4.png) |
 
 ---
 
@@ -48,11 +46,15 @@ To use this script and set up your Debian system with my i3 config and Ly, follo
 2. Follow my installation guide here [How To Install Debian-Z](https://github.com/zedsalim/debian-z-tutor) .
 
 3. Once the base system is installed:
+
 ### Install git and vim
+
 ```bash
 sudo apt install -y git vim
 ```
+
 ### Clone this repo
+
 ```bash
 git clone https://github.com/zedsalim/debian-z
 cd debian-z
@@ -60,42 +62,56 @@ ls
 .git   config  optional  1-software.sh  3-fonts.sh  README.md
 [ign]  fonts   theme     2-setup.sh     4-rice.sh   run_me.sh
 ```
+
 ### Categorization of the directories and the scripts
-1. Scripts:   
-1-software.sh: A script responsible for install all the softwares and the packages needed for a minimal Debian system, **(you must see what inside it and you can custumize it as you need)**.   
-2-setup.sh: A script that handles the initial setup of the i3wm environment and Ly Console Display Manager.   
-3-fonts.sh: A script for font configuration and installation.   
-4-rice.sh: A script that performs further customization or "ricing" of Debian-Z i3wm environment.   
-run_me.sh: A script meant to be executed to apply the configurations and setups provided by other scripts **(this is the only script you need to run)**   
 
+1. Scripts:
+   1-software.sh: A script responsible for install all the softwares and the packages needed for a minimal Debian system, **(you must see what inside it and you can custumize it as you need)**.
+   2-setup.sh: A script that handles the initial setup of the i3wm environment and Ly Console Display Manager.
+   3-fonts.sh: A script for font configuration and installation.
+   4-rice.sh: A script that performs further customization or "ricing" of Debian-Z i3wm environment.
+   run_me.sh: A script meant to be executed to apply the configurations and setups provided by other scripts **(this is the only script you need to run)**
 
-2. Directories **(Do not modify)**:   
-config: The configuration file for the Debian-Z setup.   
-fonts: A directory containing font files used in the Debian-Z configuration.   
-theme: A directory with theme-related files.   
-optional: A folder containing optional configuration files and scripts that are not necessary for the basic setup (check them out).   
+2. Directories **(Do not modify)**:
+   config: The configuration file for the Debian-Z setup.
+   fonts: A directory containing font files used in the Debian-Z configuration.
+   theme: A directory with theme-related files.
+   optional: A folder containing optional configuration files and scripts that are not necessary for the basic setup (check them out).
 
-3. Other Files **(Delete them if you want)**:   
-README.md: A Markdown file serving as the main documentation or guide for this project.   
-[ign]: A folder that contains Essential Files for the README.md.   
+3. Other Files **(Delete them if you want)**:
+   README.md: A Markdown file serving as the main documentation or guide for this project.
+   [ign]: A folder that contains Essential Files for the README.md.
 
 **_Please note that the directories are marked as "Do not modify" to indicate that they contain important files and resources that should not be altered unless you have specific knowledge or intention to modify them._**
 
 ## Installation
+
 **To install this setup, simply run ./run_me.sh, enter your password, and wait for the installation to complete.**
+
 ```bash
 ./run_me.sh
 ```
 
+> For Linux Mint, run `sudo apt install -y alacritty` before rebooting
+
 ## Post-Installation
+
 > Press Super + Shift + h to view the Guide and read it all.
 > NOTE: The 'Super' Key is the 'Windows' Key
 
 ## Usage
+
 > The Super key is the Windows key
+
 <h2>Keybindings:</h2>
 
- ### Window Manager Keybindings:
+### Additional installation for Linux Mint
+
+```bash
+sudo apt install -y eza neovim
+```
+
+### Window Manager Keybindings:
 
 | Keybinding        | Action                                      |
 | ----------------- | ------------------------------------------- |

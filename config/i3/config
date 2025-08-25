@@ -7,7 +7,7 @@ exec --no-startup-id ibus-daemon -drx
 exec_always feh --bg-fill ~/.config/wallpapers/moon.jpg
 #exec_always --no-startup-id ~/.fehbg
 exec_always --no-startup-id ~/.config/i3/autostart.sh
-exec --no-startup-id ~/.config/scripts/help_notification.sh
+#exec --no-startup-id ~/.config/scripts/help_notification.sh
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id ~/.config/scripts/resolution.sh
 #exec --no-startup-id ~/.config/scripts/resolution-double.sh
@@ -15,9 +15,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #              Vars
 
 set $mod Mod4
-set $alt Mod1 
-set $g_inner 9
-set $g_outer 4
+set $alt Mod1
+set $g_inner 0
+set $g_outer 0
 smart_borders on
 ######################################
 #             Theme
@@ -36,16 +36,16 @@ bindsym $mod+q kill
 
 bindsym $mod+Shift+n 	gaps inner current set $g_inner; gaps outer current set $g_outer
 bindsym $mod+x		gaps outer current plus 5
-bindsym $mod+Shift+x	gaps outer current minus 5 
+bindsym $mod+Shift+x	gaps outer current minus 5
 bindsym $mod+z		gaps inner current plus 5
 bindsym $mod+Shift+z	gaps inner current minus 5
 ######################################
 #    	 System keybindings
 
 # Reboot
-bindsym $mod+Shift+b exec "sudo reboot"
+bindsym $mod+Shift+b exec "systemctl reboot"
 # Power off
-bindsym $mod+Shift+s exec "sudo shutdown now"
+bindsym $mod+Shift+s exec "systemctl poweroff"
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $alt+Shift+s layout stacking
