@@ -55,8 +55,8 @@ sudo nala install -y htop
 sudo nala install -y flameshot
 
 # Printer Support
-sudo nala install -y cups simple-scan
-sudo systemctl enable cups
+#sudo nala install -y cups simple-scan
+#sudo systemctl enable cups
 
 # Bluetooth Support
 sudo nala install -y bluez blueman
@@ -112,3 +112,23 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
 sudo nala update
 
 sudo nala install -y codium
+
+# Docker CE
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /usr/share/keyrings/docker-archive-keyring.asc
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list
+
+sudo nala update
+
+sudo nala install -y docker-ce docker-ce-cli containerd.io
+
+# Add current user to docker group
+sudo usermod -aG docker $USER
+
+# Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Volta (Node.js version manager)
+curl https://get.volta.sh | bash
